@@ -1,1 +1,1 @@
-# BrainFlex-Hybrid
+# BFX-Hybrid

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Brainflex Automation Suite">
+
+  <listeners>
+    <listener class-name="config.TestListener"/>
+  </listeners>
+
+  <parameter name="targetURL" value="https://student.brainflex360.com/student/auth/login" />
+
+  <parameter name="targetEnvironment" value="institute" />
+
+    <test name="Verify Login" verbose="1">
+      <classes>
+        <class name="tests.Web_Tests.Student.Login_Test">
+          <methods>
+            <include name="Verify_BrainFlex_Tutor_Login"></include>
+          </methods>
+        </class>
+      </classes>
+    </test>
+
+  </suite>
