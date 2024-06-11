@@ -50,18 +50,21 @@
             <version>2.6</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.saucelabs</groupId>
             <artifactId>sauce_testng</artifactId>
             <version>2.1.25</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>2.52.0</version>
             <scope>test</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/net.rcarz/jira-client -->
         <dependency>
             <groupId>net.rcarz</groupId>
@@ -90,7 +93,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFiles>src/Build_XMLs/TestSuite_Institute.xml</suiteXmlFiles>
+                        <suiteXmlFiles>src/Build_XMLs/TestSuite_Student.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

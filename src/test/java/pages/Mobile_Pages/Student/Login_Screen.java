@@ -1,4 +1,4 @@
-package pages.Mobile_Pages;
+package pages.Mobile_Pages.Student;
 
 import abstracts.WebLocators.InstituteLocators;
 import config.Mobile_Common;

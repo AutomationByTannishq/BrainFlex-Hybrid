@@ -354,11 +354,11 @@ public class CreateTest_Page  extends InstituteLocators {
         String Stu_Pass = webCommon.read_json("StudentNumber");
         webCommon.WaitForElementAndType(driver, StudentLocators.MobileNumberField, Stu_Mob);
         webCommon.log("Entered Student Mobile Number");
-        webCommon.WaitForElementAndClick(driver, LoginViaPassword);
-        webCommon.log("Clicked On Login Via Password");
-        webCommon.WaitForElementAndType(driver, StudentLocators.LoginPasswordField, Stu_Pass);
-        webCommon.log("Entered Student Password");
-        webCommon.WaitForElementAndClick(driver, StudentLocators.LoginButton);
+//        webCommon.WaitForElementAndClick(driver, LoginViaPassword);
+//        webCommon.log("Clicked On Login Via Password");
+//        webCommon.WaitForElementAndType(driver, StudentLocators.LoginPasswordField, Stu_Pass);
+//        webCommon.log("Entered Student Password");
+//        webCommon.WaitForElementAndClick(driver, StudentLocators.LoginButton);
         webCommon.waitUntilElementPresent(driver, TestName);
         webCommon.log("Test is Displayed On Student Dashboard");
     }

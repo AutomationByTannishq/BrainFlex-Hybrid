@@ -6,7 +6,7 @@
     <listener class-name="config.TestListener"/>
   </listeners>
 
-  <parameter name="targetURL" value="https://student.brainflex360.com/student/auth/login" />
+  <parameter name="targetURL" value="https://student-new.brainflex360.com/student/auth/login" />
 
   <parameter name="targetEnvironment" value="institute" />
 

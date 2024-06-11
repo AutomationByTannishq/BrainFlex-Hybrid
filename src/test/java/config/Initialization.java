@@ -1,6 +1,6 @@
 package config;
 import org.testng.Reporter;
-import pages.Mobile_Pages.Login_Screen;
+import pages.Mobile_Pages.Student.Login_Screen;
 import pages.Web_Pages.Admin.Admin_Login_Page;
 import pages.Web_Pages.Admin.Content_Tab_Page;
 import pages.Web_Pages.Institute.CreateTest_Page;
@@ -54,7 +54,7 @@ public class Initialization{
         URL url = new URL(targetUrl);
         if (targetEnvironment.equalsIgnoreCase("institute") || targetEnvironment.equalsIgnoreCase("admin") || targetEnvironment.equalsIgnoreCase("student"))
         {
-            setProperty("webdriver.chrome.driver", "/Users/apple/Documents/BFX_2-11-2023/BFX-Hybrid/Driver/chromedriver");
+            setProperty("webdriver.chrome.driver", "/Users/apple/Desktop/Brainflex-Auto/BrainFlex-Hybrid/Driver/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--ignore-ssl-errors=yes");
@@ -69,6 +69,7 @@ public class Initialization{
             admin_login = new Admin_Login_Page(web_driver);
             admin_content = new Content_Tab_Page(web_driver);
             notificationsPage = new Notifications_Page(web_driver);
+            stu_login = new Stu_Login_Page(web_driver);
         }
         else if (targetEnvironment.equalsIgnoreCase("mobile"))
         {

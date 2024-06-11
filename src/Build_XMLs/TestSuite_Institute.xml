@@ -6,7 +6,7 @@
     <listener class-name="config.TestListener"/>
   </listeners>
 
-  <parameter name="targetURL" value="https://institute-qa.brainflex360.com/institute/auth/login" />
+  <parameter name="targetURL" value="https://institute.brainflex360.com/institute/auth/login" />
 
   <parameter name="targetEnvironment" value="institute" />
 
@@ -23,19 +23,19 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="Verify Test Creation Scenarios" verbose="1">
-      <classes>
-        <class name="tests.Web_Tests.Institute.CreateTest_Tests">
-          <methods>
-            <include name="Verify_Test_Is_Created_With_BrainFlex_Question_Bank_And_Displayed_On_Student_Dashboard"></include>
+<!--    <test name="Verify Test Creation Scenarios" verbose="1">-->
+<!--      <classes>-->
+<!--        <class name="tests.Web_Tests.Institute.CreateTest_Tests">-->
+<!--          <methods>-->
+<!--            <include name="Verify_Test_Is_Created_With_BrainFlex_Question_Bank_And_Displayed_On_Student_Dashboard"></include>-->
 <!--            <include name="Create_Test_With_Sample_Institute_Question_Bank"></include>-->
 <!--            <include name="Create_Test_With_Previous_Year_Or_Preset_Paper"></include>-->
 <!--            <include name="Create_Test_With_Brainflex_Plus_Sample_Institute_Question_Bank"></include>-->
 <!--            <include name="Delete_Created_Test"></include>-->
-          </methods>
-        </class>
-      </classes>
-    </test>
+<!--          </methods>-->
+<!--        </class>-->
+<!--      </classes>-->
+<!--    </test>-->
 
 <!--    <test name="Verify User Management Scenarios" verbose="1">-->
 <!--        <classes>-->
@@ -48,21 +48,21 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-<!--    <test name="Notification Handling Scenarios" verbose="1">-->
-<!--        <classes>-->
-<!--            <class name="tests.Web_Tests.Institute.Notifications_Tests">-->
-<!--                <methods>-->
-<!--                    <include name="Create_New_Notification_To_send_Test_Report_On_Mail"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Progress_Report_On_Mail"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Absent_Mail"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Custom_Mail"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Test_Report_On_WhatsApp"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Progress_Report_On_WhatsApp"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Absent_Notification_On_WhatsApp"></include>-->
-<!--                    <include name="Create_New_Notification_To_send_Custom_Text_On_WhatsApp"></include>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Notification Handling Scenarios" verbose="1">
+        <classes>
+            <class name="tests.Web_Tests.Institute.Notifications_Tests">
+                <methods>
+                    <include name="Create_New_Notification_To_send_Test_Report_On_Mail"></include>
+                    <include name="Create_New_Notification_To_send_Progress_Report_On_Mail"></include>
+                    <include name="Create_New_Notification_To_send_Absent_Mail"></include>
+                    <include name="Create_New_Notification_To_send_Custom_Mail"></include>
+                    <include name="Create_New_Notification_To_send_Test_Report_On_WhatsApp"></include>
+                    <include name="Create_New_Notification_To_send_Progress_Report_On_WhatsApp"></include>
+                    <include name="Create_New_Notification_To_send_Absent_Notification_On_WhatsApp"></include>
+                    <include name="Create_New_Notification_To_send_Custom_Text_On_WhatsApp"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
   </suite>

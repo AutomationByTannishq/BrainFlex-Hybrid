@@ -13,19 +13,25 @@ public class Stu_Login_Page extends StudentLocators {
         this.driver = driver;
     }
     Web_Common webCommon = new Web_Common(driver);
-    public void Login_with_Valid_Student_Credentials() throws InterruptedException, IOException, ParseException {
+    public void Login_with_Cheat_Code() throws InterruptedException, IOException, ParseException {
         webCommon.log("Launched URL");
         String Stu_Mob = webCommon.read_json("StudentNumber");
         String Stu_Pass = webCommon.read_json("StudentNumber");
+        webCommon.WaitForElementAndClick(driver, StudentLocators.ToLetter);
         webCommon.WaitForElementAndType(driver, StudentLocators.MobileNumberField, Stu_Mob);
         webCommon.log("Entered Student Mobile Number");
-        webCommon.WaitForElementAndClick(driver, LoginViaPassword);
-        webCommon.log("Clicked On Login Via Password");
-        webCommon.WaitForElementAndType(driver, StudentLocators.LoginPasswordField, Stu_Pass);
-        webCommon.log("Entered Student Password");
-        webCommon.WaitForElementAndClick(driver, StudentLocators.LoginButton);
+        webCommon.WaitForElementAndType(driver, StudentLocators.CheatCodeField+"[1]", "3");
+        webCommon.WaitForElementAndType(driver, StudentLocators.CheatCodeField+"[2]", "4");
+        webCommon.WaitForElementAndType(driver, StudentLocators.CheatCodeField+"[3]", "1");
+        webCommon.WaitForElementAndType(driver, StudentLocators.CheatCodeField+"[4]", "6");
+        webCommon.WaitForElementAndType(driver, StudentLocators.CheatCodeField+"[5]", "9");
+        webCommon.WaitForElementAndType(driver, StudentLocators.CheatCodeField+"[6]", "9");
+        webCommon.log("Entered Cheat Code");
+        webCommon.WaitForElementAndClick(driver, StudentLocators.VerifyButton);
         webCommon.waitUntilElementPresent(driver, Dashboard_Heading);
         webCommon.log("Login Successful Student Dashboard is Displayed");
     }
+
+
 
 }
